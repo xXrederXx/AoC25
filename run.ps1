@@ -13,4 +13,6 @@ if (-Not (Test-Path $projectFile)) {
 
 Write-Host "Running Advent of Code Day $day..." -ForegroundColor Cyan
 
-dotnet run --project $projectFile
+Push-Location $folder
+dotnet run
+Pop-Location
