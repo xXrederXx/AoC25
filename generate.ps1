@@ -17,4 +17,7 @@ dotnet new console -n $folder -o $folder
 # Add to solution
 dotnet sln add $projectFile
 
+# Add reference to Common project
+dotnet add $projectFile reference "./Common/Common.csproj"
+
 Write-Host "Day $day created and added to solution."
