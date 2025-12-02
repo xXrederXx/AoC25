@@ -1,5 +1,5 @@
 using Common;
-
+//TODO SOLVE THIS
 public static class Task2
 {
     private static int counter = 50;
@@ -7,7 +7,7 @@ public static class Task2
 
     public static void ComputeTask()
     {
-        string[] lines = FileHelper.GetLines("test.txt");
+        string[] lines = FileHelper.GetLines("input.txt");
         foreach (string line in lines)
         {
             Compute(line);
@@ -55,7 +55,7 @@ public static class Task2
         if (counterStartZero && counterFlip)
             numZeros--;
 
-        if (counter == 0)
+        if (counter == 0 && !counterStartZero)
         {
             numZeros++;
         }
